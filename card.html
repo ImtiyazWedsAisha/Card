@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Card</title>
+    <style>
+        body{
+            background-image: url('img/bg6.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%; 
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
+        
+
+        .name{
+          font-family: cursive;
+          /* font-size: xx-large; */
+          font-weight: bold;
+        }
+        .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+      .btn2{
+      padding: 6px 20px;
+      position: relative;
+      /* bottom: 10%; */
+      /* right: 10%; */
+      font-weight: bold;
+      border: 2px solid rgb(165, 158, 158);
+      background-color: rgb(213, 238, 225);
+      color: rgb(183, 22, 22);
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Castoro', serif;
+      font-size:2.5vw;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+  
+
+    .btn1{
+      padding: 6px 20px;
+      position: relative;
+      /* bottom: 10%; */
+      /* left: 10%; */
+      font-weight: bold;
+      border: 2px solid rgb(165, 158, 158);
+      background-color: rgb(213, 238, 225);
+      color: rgb(183, 22, 22);
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Castoro', serif;
+      font-size: 2.5vw;
+      border-radius: 6px;
+      cursor: pointer;
+  }
+
+  
+p {
+  color: rgb(241, 244, 241);
+  /* font-family: "Courier"; */
+  font-family: cursive;
+  font-size: 2.5vw;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  animation: type 4s steps(60, end) forwards;
+  -webkit-user-select: none;
+  user-select: none;
+}
+p:nth-child(2) {
+  animation-delay: 0.5s;
+}
+p:nth-child(3) {
+  animation-delay: 1s;
+}
+p:nth-child(4) {
+  animation-delay: 1.5s;
+}
+p:nth-child(5) {
+  animation-delay: 2s;
+}
+p:nth-child(6) {
+  animation-delay: 2.5s;
+  /* margin-bottom: 25px; */
+}
+p:nth-child(7) {
+  animation-delay: 3s;
+}
+p:nth-child(8) {
+  animation-delay: 4.5s;
+}
+/* p:nth-child(8) span:first-child {
+  animation-duration: 0.8s;
+} */
+/* span {
+  animation: blink 1.8s infinite 8s;
+} */
+p a {
+  color: rgba(225, 237, 225, 0);
+  text-decoration: none;
+}
+@keyframes type {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    width: 30em;
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* ::selection {
+  background: black;
+}
+     */
+        </style>
+</head>
+<body>
+    <center>
+        
+        
+    <section class="container centered";>
+            <p class="name">IMTIYAZ</p>
+            <p class="col1">and</p>
+            <p class="name">AISHA</p>
+    
+            <p class="content col1">heartily invite you to our reception</p>
+            <p class="content cursive col1">ON SUNDAY,  THE 23RD OCTOBER 2022 @ 7:00 P.M.</p>
+            <p class="content col1">and look forward to host your blessed visit!</p>
+    
+            <p class="content col1">Your presence would make our happiness grow manifolds!</p>
+            <p><button class="btn1" onclick="document.location='rsvp.html'">R.S.V.P</button>
+            <button class="btn2" onclick="document.location='map.html'">MAP</button></p>
+</center>
+</section>
+</body>
+</html>

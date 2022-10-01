@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="envstyle.css">
+    <title>Envelope</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        var envelope = $('#envelope');
+        var btn_open = $("#open");
+        var btn_reset = $('#reset');
+        
+
+        envelope.click(function() {
+            open();
+        });
+        btn_open.click(function() {
+            open();
+        });
+        btn_reset.click(function() {
+            close();
+        });
+        
+        function open() {
+            envelope.addClass('open')
+                .removeClass('close');
+        }
+        function close() {
+            envelope.addClass('close')
+                .removeClass('open');
+        }
+    
+    })
+    </script>
+</head>
+
+
+<body>
+    <!-- <script src="envjs.js"></script> -->
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="words line1"></div>
+                <div class="words line2"></div>
+                <div class="words line3"></div>
+                <div class="words line4"></div>
+            </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <p class="centered"><a href="card.html">Tousch me</a></p> -->
+    
+    <div class="reset">
+        <!-- <button id="open">Open</button> -->
+        <button id="reset" onclick="document.location='card.html'">Open</button>
+    </div>
+</body>
+</html>
